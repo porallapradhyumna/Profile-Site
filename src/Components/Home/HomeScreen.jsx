@@ -34,10 +34,10 @@ export const HomeScreen = () => {
         </div>
         <div className="icons_content">
           <div className="contact_icons">
-            <SiGmail  className='icon'/>
-            <AiFillLinkedin className='icon'/>
-            <AiFillGithub className='icon'/>
-            <AiFillPhone  className='icon'/>
+          <a href="mailto:pradhyumnaporalla99@gmail.com"><SiGmail  className='icon'/></a>
+          <a href="https://www.linkedin.com/in/pradhyumna-poralla-60ab641a3/"><AiFillLinkedin className='icon'/></a>
+          <a href="https://github.com/porallapradhyumna"><AiFillGithub className='icon'/></a>
+          <a href="tel:+19408433284"><AiFillPhone  className='icon'/></a>
           </div>
         </div>
       </div>

@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
 import "./NavBar.css"
-export default function NavBar() {
+export default function NavBar({contactpressed}) {
   const [clciked,setClicked] = useState("home")
+  const [value,setValue] = useState(false)
+  const contact_pressed = (value) => {
+    contactpressed(value)           
+  } 
   let s = "lis_p"
   return (
     <div className="nav">
@@ -11,8 +15,8 @@ export default function NavBar() {
         <a className={(clciked === "experience")?"lis_p_clicke":s} href='/#experience' onClick={()=>{setClicked("experience")}}>Experience</a>
         <a className={(clciked === "academics")?"lis_p_clicke":s} href='/#academics' onClick={()=>{setClicked("academics")}}>Academics</a>
         <a className={(clciked === "details")?"lis_p_clicke":s} href='/#details' onClick={()=>{setClicked("details")}}>Details</a>
-        <a className={(clciked === "projects")?"lis_p_clicke":s} href='' onClick={()=>{setClicked("projects")}}>Projects</a>
-        <a className={(clciked === "contact")?"lis_p_clicke":s} href='' onClick={()=>{setClicked("contact")}}>Contact</a>
+        <a className={(clciked === "projects")?"lis_p_clicke":s} href='/#projects' onClick={()=>{setClicked("projects")}}>Projects</a>
+        <a className={(clciked === "contact")?"lis_p_clicke":s} onClick={()=>{setClicked("contact"); setValue(!value);contact_pressed(value) }}>Contact</a>
       </div>
     </div>
   )

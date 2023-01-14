@@ -16,6 +16,7 @@ export default function About() {
       if (snapshot.exists()) {
         Object.values(data).map((project) => {
           setabout(project)
+          console.log(about)
         });
       }
     
@@ -24,7 +25,7 @@ export default function About() {
   return (
     <div className="About" id="about">
       <div className="rect">
-      <Rectangle/>
+        <Rectangle/>
       </div>
       <div className="text_container">
       <p className="text">

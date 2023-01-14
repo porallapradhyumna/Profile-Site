@@ -1,0 +1,56 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.card_1{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ffd000;
+    color: white;
+    margin-bottom: 2%;
+    margin-top: 2%
+}
+.hea{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+}
+.heading_1{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 47px;
+    color: white;
+    text-align: center;
+    
+}
+
+.pro_head{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+    color: white;
+    text-align: center;
+}
+.pro_head span{
+    color: #ffd000;
+}
+
+.cont_projects{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+

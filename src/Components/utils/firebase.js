@@ -8,8 +8,8 @@ const firebaseConfig = {
     projectId: "fir-demo-3294e",
     storageBucket: "fir-demo-3294e.appspot.com",
     messagingSenderId: "385827459782",
-    appId: "1:385827459782:web:f633145cbe0c5c1339bdc7",
-    measurementId: "G-PRS0H576MG"
+    appId: "1:385827459782:web:9ea3de0af591e53e39bdc7",
+    measurementId: "G-KLC8NSKG61"
 };
 
 const app = initializeApp(firebaseConfig);

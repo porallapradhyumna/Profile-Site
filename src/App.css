@@ -60,47 +60,6 @@ html{
 }
 
 
-/*.cht_bubble{
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  min-width: 50px;
-  height:50px;
-  background-color:#ffd000;
-  border:1px solid black;
-  border-radius: 30px;
-  padding: 5px;
-}
-
-.cht_bubble p{
-  font-family: 'Space Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 36px;
-  letter-spacing: 0.05em;
-  color: black;
-}
-
-.flt_btn:hover{
-  cursor: pointer;
-}
-
-
-.inner{
-  position: fixed;
-  right: 3%;
-  top: 10%;
-  height: 80vh;
-  padding: 5px;
-  border-radius: 20px;
-  flex-direction: column;
-  justify-content:space-evenly;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  filter:blur(50);
-  border: 1px solid #ffd000;
-}*/
 
 
 

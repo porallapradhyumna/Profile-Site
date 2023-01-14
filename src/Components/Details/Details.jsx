@@ -18,7 +18,7 @@ export default function Details() {
         if (snapshot.exists()) {
           Object.values(data).map((project) => {
             setexp((projects) => [...projects, project]);
-            //console.log(Skills)
+            console.log(Skills)
           });
         }
         }
@@ -33,7 +33,7 @@ export default function Details() {
           if (snapshot.exists()) {
             Object.values(data).map((project) => {
               setSkills((projects) => [...projects, project]);
-              console.log(Skills)
+              //console.log(Skills)
             });
           }
           }

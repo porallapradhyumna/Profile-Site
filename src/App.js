@@ -10,6 +10,7 @@ import Details from './Components/Details/Details';
 import { BsLink45Deg } from 'react-icons/bs';
 import { SiGmail } from 'react-icons/si';
 import { AiFillGithub, AiFillLinkedin, AiFillPhone } from 'react-icons/ai';
+import Projects from './Components/Projects/Projects';
 
 function App() {
   const [open_stack,setOpen_stack] = useState(false)
@@ -28,9 +29,14 @@ function App() {
     'transition-duration': '1s',
     'transition-property': 'transform',
   }
+
+  const contact_pressed = (value) =>{
+      setOpen_stack(value)
+  }
+
   return (
     <div className="App">
-      <NavBar></NavBar>
+      <NavBar contactpressed={contact_pressed}></NavBar>
       <header className="App-header">
         <HomeScreen/>
       </header>
@@ -44,17 +50,20 @@ function App() {
 
       <Details/>
 
+      <Projects/>
+
       </body>
       
-      <div className='flt_btn' onClick={Open_Contact_Stack} style={flt_btn_style} >
-        <BsLink45Deg color='black' size={30}/>
+      <div className='flt_btn'  style={flt_btn_style} onClick={()=>{setOpen_stack(!open_stack)}} >
+        <BsLink45Deg color='black' size={30} onClick={Open_Contact_Stack}/>
         {
           open_stack?(
             <>
-            <SiGmail  color='black' size={30}/>
-            <AiFillLinkedin color='black' size={30}/>
-            <AiFillGithub color='black' size={30}/>
-            <AiFillPhone  color='black' size={30}/></>
+            <a href="mailto:pradhyumnaporalla99@gmail.com"><SiGmail  color='black' size={30}/></a>
+            <a href="https://www.linkedin.com/in/pradhyumna-poralla-60ab641a3/"><AiFillLinkedin color='black' size={30} /></a>
+            <a href="https://github.com/porallapradhyumna"><AiFillGithub color='black' size={30}/></a>
+            <a href="tel:+19408433284"><AiFillPhone  color='black' size={30}/></a>
+            </>
           ):(
             <></>
           )
