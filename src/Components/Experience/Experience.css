@@ -1,0 +1,55 @@
+.exper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.title_container{
+    display:flex;
+}
+.title_container p{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 47px;
+    color: white
+}
+.title_container span{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 47px;
+    color: #ffd000
+}
+
+.card{
+    display: flex;
+    width: 90%;
+    height: 30vh;
+    border: 1px solid #ffd000;
+    border-radius:20px;
+    padding:10px;
+
+}
+.card_in1{
+    width: 75%;
+}
+
+.comp_name{
+    font-size:20px
+}
+
+.card p{
+    font-family: 'Space Mono';
+    font-style:normal;
+    font-weight: 900;
+}
+
+.pos_container{
+    display: flex;
+    flex-direction: row;
+}

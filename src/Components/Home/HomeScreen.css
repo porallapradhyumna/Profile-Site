@@ -1,37 +1,123 @@
-
 .home{
-    width: 98%;
-    min-height:50rem;
-    border-style: solid;
-    border-color: #ffd000;
-    border-width: 1px;
+    width: 94%;
+    margin-top:50px;
+    min-height: 80vh;
+    max-height: 85vh;
+    border: 1px solid #ffd000;
     border-radius: 40px;
+    padding:40px;
+    display: flex;
+}
+.half1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 15%;
 }
 
-.shape{
-    overflow:hidden;
-    position: absolute;
-    right:55px;
-    top:12%;
+
+.name{
+    color: white;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    text-align: right;
 }
-.img{ 
-    position: absolute;
-    right: 55px;
-    top: 12%;
+
+.subject{
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.span{
+    color: #ffd000;
+}
+
+
+.current_job{
+    background-color:#ffd000;
+    width:max-content;
+    padding-right: 2%;
+    padding: 2%;
+    border-radius: 20px;
+    padding-right: 1%;
+}
+.cj_p{
+    font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.05em;
+text-align: left;
+color: #000000;
+}
+.a-cj-p{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/* Half2 */
+
+
+.half2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons_content{
+    height: 100%;
 }
 
 .shape:hover{
     
     transform: rotate(-10deg);
     transition-property:  transform;
-    transition-timing-function: ease-in-out;
-    transition-duration: 3s;
+    
+    transition-duration: 1s;
+
 }
 
-h1{
-    color: white;
-    font-family: 'Sofia Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
+.icon{
+    color:#ffd000;
+    }
+
+.shape:hover .icon{
+    color: #000;
+}
+
+
+.img{ 
+    position: absolute;
+}
+
+.contact_icons{
+    justify-self: flex-end;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-self:flex-end;
+    justify-content:space-evenly;
+    
 }

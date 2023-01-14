@@ -1,0 +1,44 @@
+.details{
+    display:flex;
+    width:100%;
+    margin-top:5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills h1{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 47px;
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+.skills span{
+    color: #ffd000
+}
+
+.skills{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chip{
+    padding:0.5%;
+    /*border: 1px solid #ffd000;*/
+    background-color:#ffd000;
+    border-radius:25px;
+    min-width:5%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: black;
+    font-weight: 600;
+    margin: 5%;
+    font-size: 18px;
+}
